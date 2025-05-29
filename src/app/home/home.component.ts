@@ -5,11 +5,13 @@ import { RouterLink, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AboutComponent } from '../about/about.component';
 import { ServiceComponent } from '../service/service.component';
+import { SkillsComponent } from '../skills/skills.component';
+import { PortfolioComponent } from '../portfolio/portfolio.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule,RouterModule,AboutComponent,ServiceComponent],
+  imports: [CommonModule,RouterModule,AboutComponent,ServiceComponent,SkillsComponent,PortfolioComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

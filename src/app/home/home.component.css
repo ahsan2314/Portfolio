@@ -241,7 +241,9 @@
 
 .image-section img {
     filter: drop-shadow(0 6px 8px rgba(0, 163, 231, 0.5)) drop-shadow(0 10px 22px rgba(0, 163, 231, 0.35));
-    border-radius: 30% 50% 50% 50%;
+    border-radius: 40% 40% 20% 20%;
+
+    height: 700px;
 }
 
 .image-section img {
