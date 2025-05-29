@@ -1,0 +1,335 @@
+
+.text{
+    color: #00A3E7;
+}
+.main h1 {
+    color: white;
+    font-size: 58px;
+    margin-top: 20px;
+}
+
+.main h2 {
+    color: white;
+    font-size: 35px;
+    margin-top: 10px;
+    color: #27afe9;
+    font-weight: 1000;
+}
+.home{
+    height: 60%;
+    width: 100%;
+}
+
+.main {
+    margin-left: 190px;
+    margin-top: 20px;
+    padding-top: 140px;
+}
+
+.section {
+    margin-left: 190px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.section p {
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.button {
+    position: relative;
+    padding: 15px 52px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #00A3E7;
+    transition: all 0.2s ease;
+    margin-left: 190px;
+}
+
+.button:active {
+    transform: scale(0.96);
+}
+
+.button:before,
+.button:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+}
+
+.button:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, transparent 20%, #00A3E7 20%, transparent 30%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #00A3E7 15%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+        10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+            40% 90%, 55% 90%, 70% 90%;
+    }
+
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+            50% 50%, 65% 20%, 90% 30%;
+    }
+
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+            50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+.button:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #00A3E7 15%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%),
+        radial-gradient(circle, #00A3E7 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+            70% -10%, 70% 0%;
+    }
+
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+            105% 0%;
+    }
+
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+            110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+.main h1 {
+    width: 40ch;
+    font-family: sans-serif;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* animation: typing 2s steps(20), infinite alternate-reverse !important; */
+}
+
+/* @keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 20ch;
+    }
+} */
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 160px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+.socialContainer {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 4px 30px rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: green;
+    transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.image-section {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.image-section img {
+    filter: drop-shadow(0 6px 8px rgba(0, 163, 231, 0.5)) drop-shadow(0 10px 22px rgba(0, 163, 231, 0.35));
+    border-radius: 30% 50% 50% 50%;
+}
+
+.image-section img {
+
+    animation: fadeSlideUp 1.2s ease-out forwards;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover Effect */
+.image-section img:hover {
+    transform: scale(1.5);
+}
+
+/* Entry Animation */
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 12px rgba(0, 163, 231, 0.6)) drop-shadow(0 0 24px rgba(0, 163, 231, 0.5));
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.mian{
+    height:100vh;
+}
+.main{
+    display: inline-block;
+    animation: slideleft 1.5s forwards;
+}
+@keyframes slideleft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.section{
+    display: inline-block;
+    animation: slideleft 1.5s forwards;
+}
+@keyframes slideleft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.button{
+    display: inline-block;
+    animation: slideleft 1.5s forwards;
+}
+@keyframes slideleft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.card {
+    animation: slidebottom 0.7s forwards;
+}
+@keyframes slidebottom {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+

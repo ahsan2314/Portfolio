@@ -1,0 +1,70 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 12vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-right: 200px;
+    gap: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-left: 190px;
+    cursor: pointer;
+    animation: slideleft 1.5s forwards;
+}
+
+@keyframes slideleft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+ul li {
+    list-style: none;
+    color: white;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #10a1df;
+    transition: 0.3s ease;
+}
+
+ul span {
+    color: #01A4E9;
+}
+ ul a {
+      display: inline-block;
+      animation: slideright 1.5s forwards;
+    }
+    @keyframes slideright {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
