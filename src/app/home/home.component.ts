@@ -9,7 +9,7 @@ import { ServiceComponent } from '../service/service.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink,CommonModule,RouterModule,AboutComponent,ServiceComponent],
+  imports: [CommonModule,RouterModule,AboutComponent,ServiceComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
