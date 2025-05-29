@@ -1,0 +1,231 @@
+.mian{
+    padding-top: 100px;
+    color: white;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.head span{
+    color: #00A3E7;
+}
+.line{
+    height: 2px;
+    background-color: #00A3E7;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+:root {
+    --primary: #4361ee;
+    --primary-light: #4895ef;
+    --dark: #2b2d42;
+    --light: #f8f9fa;
+    --gray: #adb5bd;
+    --danger: #f72585;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7ff;
+    color: var(--dark);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 150px auto 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.form-header {
+    padding: 1.5rem 2rem;
+    color: white;
+}
+
+.form-header h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.form-body {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--dark);
+}
+
+label.required::after {
+    content: " *";
+    color: var(--danger);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#name, #email, #message {
+    box-shadow: 0 4px 15px rgba(161, 77, 129, 0.3);
+    transition: box-shadow 0.3s ease;
+    border: none;
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: #6D0C48;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    grid-column: span 2;
+    margin-top: 1rem;
+    width: 300px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button span {
+    display: block;
+    /* margin-left: 0.3em; */
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+@media (max-width: 1024px) {
+    .form-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-body {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+
+    .form-header h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        grid-column: span 1;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-header h1 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    .form-header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    #name, #email, #message {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        right: 0;
+        position: static;
+    }
+}

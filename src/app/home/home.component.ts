@@ -7,11 +7,12 @@ import { AboutComponent } from '../about/about.component';
 import { ServiceComponent } from '../service/service.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule,RouterModule,AboutComponent,ServiceComponent,SkillsComponent,PortfolioComponent],
+  imports: [CommonModule,RouterModule,AboutComponent,ServiceComponent,SkillsComponent,PortfolioComponent,FooterComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

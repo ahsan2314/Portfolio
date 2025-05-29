@@ -5,13 +5,13 @@
 .main h1 {
     color: white;
     font-size: 58px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .main h2 {
     color: white;
     font-size: 35px;
-    margin-top: 10px;
+    margin-top: 30px;
     color: #27afe9;
     font-weight: 1000;
 }
@@ -23,7 +23,7 @@
 .main {
     margin-left: 190px;
     margin-top: 20px;
-    padding-top: 140px;
+    padding-top: 180px;
 }
 
 .section {
@@ -144,16 +144,6 @@
     /* animation: typing 2s steps(20), infinite alternate-reverse !important; */
 }
 
-/* @keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 20ch;
-    }
-} */
-
 .card {
     width: fit-content;
     height: fit-content;
@@ -235,7 +225,7 @@
 
 .image-section {
     position: absolute;
-    top: 10%;
+    top: 8%;
     right: 10%;
 }
 
