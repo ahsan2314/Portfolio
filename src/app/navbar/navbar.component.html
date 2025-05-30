@@ -1,14 +1,19 @@
 <div class="head">
-        <div class="logo">
-            <h1>Portfolio <span> . </span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a routerLink="/" class="active"><span>Home</span></a></li>
-               <li><a routerLink="/about-a">About</a></li>
-                <li><a routerLink="/service-a">Service</a></li>
-             <li><a routerLink="/project-a">Project</a></li>
-           <li><a routerLink="/contact-a">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+  <div class="logo">
+    <h1>Portfolio</h1>
+  </div>
+
+  <div class="hamburger" (click)="toggleMenu()">
+    ☰
+  </div>
+
+  <nav>
+    <ul class="nav-links" [ngClass]="{ 'active': isMenuOpen }">
+      <li><a routerLink="/" class="active"><span>Home</span></a></li>
+      <li><a routerLink="/about-a">About</a></li>
+      <li><a routerLink="/service-a">Service</a></li>
+      <li><a routerLink="/project-a">Project</a></li>
+      <li><a routerLink="/contact-a">Contact</a></li>
+    </ul>
+  </nav>
+</div>

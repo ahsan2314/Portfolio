@@ -236,3 +236,8 @@ box-shadow: 0 3px 12px rgb(255, 255, 255);
   opacity: 1;
   transform: translateX(0);
 }
+.features-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px;
+}

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import emailjs from '@emailjs/browser';
+import { FooterComponent } from '../footer/footer.component';
 
 
 @Component({
   selector: 'app-contact-a',
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './contact-a.component.html',
   styleUrl: './contact-a.component.css'
 })
@@ -40,4 +41,5 @@ export class ContactAComponent {
       console.error("EmailJS Error:", error);
     });
 }
+gmail="ahsanakhtar802@gmail.com"
 }

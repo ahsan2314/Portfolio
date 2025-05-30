@@ -8,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  onSubmit(event: Event): void {
+    event.preventDefault();
+
+    const target = event.target as HTMLFormElement;
+    const elements = target.elements as typeof target.elements & {
+      name: HTMLInputElement;
+      email: HTMLInputElement;
+      message: HTMLTextAreaElement;
+    };
+
+    elements.name.value = '';
+    elements.email.value = '';
+    elements.message.value = '';
+  }
+
 }

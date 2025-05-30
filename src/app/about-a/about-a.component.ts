@@ -13,25 +13,14 @@ import { FooterComponent } from '../footer/footer.component';
 export class AboutAComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     window.addEventListener('scroll', this.animateOnScroll);
-    // Optionally, trigger once on init
     this.animateOnScroll();
   }
 
   animateOnScroll = () => {
-    // const h1 = document.querySelector('.head h1') as HTMLElement;
     const image = document.querySelector('.about-img') as HTMLElement;
     const text = document.querySelector('.about-text') as HTMLElement;
 
     const windowHeight = window.innerHeight;
-
-    // if (h1) {
-    //   const h1Top = h1.getBoundingClientRect().top;
-    //   if (h1Top < windowHeight - 100) {
-    //     h1.classList.add('animate');
-    //     h1.style.transform = 'translateY(0)';
-    //     h1.style.opacity = '1';
-    //   }
-    // }
 
     if (image) {
       const imageTop = image.getBoundingClientRect().top;
