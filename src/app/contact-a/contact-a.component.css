@@ -113,7 +113,7 @@ textarea {
 /* Location, Phone, Email Section */
 .contact-list {
     list-style-type: none;
-    margin-left: -10px;
+    margin-left: -50px;
     padding-right: 10px;
 }
 
@@ -129,17 +129,17 @@ textarea {
 }
 
 .place {
-    margin-left: 62px;
+    margin-left: 20px;
     color: white;
 }
 
 .phone {
-    margin-left: 56px;
+    margin-left: 20px;
     color: white;
 }
 
 .gmail {
-    margin-left: 53px;
+    margin-left: 20px;
     color: white;
 }
 
