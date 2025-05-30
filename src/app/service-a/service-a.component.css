@@ -241,3 +241,38 @@ box-shadow: 0 3px 12px rgb(255, 255, 255);
   grid-template-columns: 1fr 1fr 1fr;
   gap: 80px;
 }
+@media screen and (max-width:1528px) {
+
+  .features-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  
+}
+@media screen and (max-width:920px) {
+
+    .features-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .feature-box{
+      width: 450px;
+      margin: 0 auto;
+    }
+
+}
+@media screen and (max-width:500px) {
+.feature-box{
+      width: 330px;
+      margin: 0 auto;
+    }
+}
+@media screen and (max-width:380px) {
+
+  .feature-box{
+      width: 280px;
+      margin: 0 auto;
+    }
+  
+}

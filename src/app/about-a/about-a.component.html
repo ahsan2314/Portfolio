@@ -105,7 +105,7 @@
     </div>
 
   </section>
-  <div class="mission-vision">
+  <div  *ngIf="currentRoute !== '/'" class="mission-vision">
     <h3>Our Mission</h3>
     <p>
       To develop cutting-edge, user-focused websites and applications that empower businesses to reach their
@@ -123,9 +123,10 @@
       <li>Fast, responsive & SEO-friendly designs</li>
       <li>Long-term client support & service</li>
     </ul>
-  </div>
-  <div class="cta">
+    <div *ngIf="currentRoute !== '/'" class="cta">
     <a routerLink="/project-a">Start Your Project With Us</a>
   </div>
+  </div>
+  
 </div>
-<app-footer></app-footer>
+<app-footer *ngIf="currentRoute !== '/'"></app-footer>

@@ -71,7 +71,9 @@
     transform: translateX(0);
   }
 }
-
+.nav-links{
+    margin-right: 100px;
+}
 .hamburger {
   display: none;
   font-size: 35px;
@@ -124,7 +126,7 @@
 @media screen and (max-width: 560px) {
   .hamburger {
     display: block;
-    margin-left: 130px !important;
+    margin-left: 150px !important;
   }
 }
 
@@ -148,4 +150,10 @@
   .nav-links {
     gap: 20px;
   }
+}
+@media screen and (max-width:380px) {
+
+        .hamburger{
+            margin-right: 800px;
+        }
 }

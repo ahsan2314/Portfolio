@@ -113,8 +113,8 @@ textarea {
 /* Location, Phone, Email Section */
 .contact-list {
     list-style-type: none;
-    margin-left: -30px;
-    padding-right: 20px;
+    margin-left: -10px;
+    padding-right: 10px;
 }
 
 .list-item {
@@ -382,7 +382,5 @@ textarea {
     font-size: 24px;
     margin-bottom: 5px;
   }
-}
-.contact-text{
-    width: 20px;
+  
 }

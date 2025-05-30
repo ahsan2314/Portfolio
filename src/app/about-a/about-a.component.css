@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 250px;
+    gap: 100px; 
     flex-wrap: wrap;
     text-align: left;
 }
@@ -303,7 +303,7 @@ button:hover .star-6 {
 
 .cta {
     margin-top: 50px;
-    margin-left: 450px;
+    /* margin-left: 450px; */
 }
 
 .cta a {
@@ -326,4 +326,41 @@ button:hover .star-6 {
     padding: 80px 0;
     text-align: center;
     color: white;
+}
+@media screen and (max-width:1284) {
+
+    .about{
+        margin-bottom: 150px;
+    }
+    .about-text{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:600px) {
+
+  .about-text p{
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+}
+@media screen and  (max-width:628px) {
+
+    .head{
+            margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width:528px) {
+
+    .about-img img{
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    .head{
+        margin-top: 30px;
+    }
 }

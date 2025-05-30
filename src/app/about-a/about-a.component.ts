@@ -1,12 +1,13 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
+import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-about-a',
   standalone: true,
-  imports: [RouterModule,FooterComponent],
+  imports: [RouterModule,FooterComponent,NgIf],
   templateUrl: './about-a.component.html',
   styleUrl: './about-a.component.css'
 })
@@ -14,8 +15,11 @@ export class AboutAComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     window.addEventListener('scroll', this.animateOnScroll);
     this.animateOnScroll();
+  } 
+  currentRoute : string = "";
+  constructor(private router: Router) {
+    this.currentRoute = this.router.url;
   }
-
   animateOnScroll = () => {
     const image = document.querySelector('.about-img') as HTMLElement;
     const text = document.querySelector('.about-text') as HTMLElement;
