@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 250px;
+    gap: 100px; 
     flex-wrap: wrap;
     text-align: left;
 }
@@ -215,7 +215,6 @@ button:hover .star-6 {
 
 .about-img img {
     transition: transform 0.3s ease;
-    /* smooth transition added here */
 }
 
 .about-img img:hover {
@@ -228,7 +227,6 @@ button:hover .star-6 {
 }
 
 .head {
-    /* display: inline-block; */
     transition: all 0.3s ease-in-out;
 }
 
@@ -268,4 +266,111 @@ button:hover .star-6 {
 
 .about-text {
     transform: translateX(-100px);
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.mission-vision {
+    max-width: 900px;
+    margin: 50px auto 20px;
+    text-align: left;
+}
+
+.mission-vision h3 {
+    font-size: 24px;
+    color: white;
+    margin-top: 25px;
+}
+
+.mission-vision p,
+.values-list {
+    font-size: 16px;
+    line-height: 1.7;
+    color: white;
+    margin: 10px 0 20px;
+}
+
+.values-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values-list li {
+    position: relative;
+}
+
+.cta {
+    margin-top: 50px;
+    /* margin-left: 450px; */
+}
+
+.cta a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 32px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #003d80;
+}
+.team-section {
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width:1284) {
+
+    .about{
+        margin-bottom: 150px;
+    }
+    .about-text{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:600px) {
+
+  .about-text p{
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+}
+@media screen and  (max-width:628px) {
+
+    .head{
+            margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width:528px) {
+
+    .about-img img{
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    .head{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+  .about-text p{
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  
 }

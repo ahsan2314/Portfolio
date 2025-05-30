@@ -384,3 +384,27 @@ textarea {
   }
   
 }
+.direct-contact-container{
+  animation: slideright 1s forwards;
+}
+
+@keyframes slideright{
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+#contact-form{
+  animation: slideleft 1s forwards;
+
+}
+@keyframes slideleft{
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
