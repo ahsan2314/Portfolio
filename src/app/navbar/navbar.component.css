@@ -71,9 +71,9 @@
     transform: translateX(0);
   }
 }
-.nav-links{
-    margin-right: 100px;
-}
+/* .nav-links{
+    margin-right: 10px;
+} */
 .hamburger {
   display: none;
   font-size: 35px;
